@@ -47,7 +47,7 @@ const translations = {
 
     paperTitle: "The Paper",
     paperIntro: "Full research paper with 11 organ system analyses, phylogenetic timeline, and 21 references.",
-    paperCite: "Ray (lead researcher), Luca (editor) &mdash; Ludus Ex Machina Research Group, April 2026",
+    paperCite: "Jihoon JJ Jeong, MD, MPH, PhD (DGIST / ModuLabs)",
     paperSeries: 'Part of the <em>Model Medicine</em> research program.',
 
     footerOrg: "Ludus Ex Machina Research Group &middot; Model Medicine",
@@ -114,7 +114,7 @@ const translations = {
 
     paperTitle: "\uB17C\uBB38",
     paperIntro: "11\uAC1C \uC7A5\uAE30 \uC2DC\uC2A4\uD15C \uBD84\uC11D, \uACC4\uD1B5 \uD0C0\uC784\uB77C\uC778, 21\uAC1C \uCC38\uACE0\uBB38\uD5CC\uC744 \uD3EC\uD568\uD55C \uC804\uCCB4 \uC5F0\uAD6C \uB17C\uBB38.",
-    paperCite: "Ray (\uC8FC \uC5F0\uAD6C\uC6D0), Luca (\uD3B8\uC9D1) &mdash; Ludus Ex Machina \uC5F0\uAD6C\uADF8\uB8F9, 2026\uB144 4\uC6D4",
+    paperCite: "\uC815\uC9C0\uD6C8 (DGIST / ModuLabs)",
     paperSeries: '<em>Model Medicine</em> \uC5F0\uAD6C \uD504\uB85C\uADF8\uB7A8\uC758 \uC77C\uBD80\uC785\uB2C8\uB2E4.',
 
     footerOrg: "Ludus Ex Machina \uC5F0\uAD6C\uADF8\uB8F9 &middot; Model Medicine",

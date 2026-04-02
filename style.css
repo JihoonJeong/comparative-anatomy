@@ -583,6 +583,22 @@ h2 {
   margin: 0 auto;
 }
 .paper-info p { margin-bottom: 8px; }
+.paper-download {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 32px;
+  border: 1px solid var(--nautilus);
+  color: var(--nautilus);
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+.paper-download:hover {
+  background: var(--nautilus);
+  color: var(--dark-bg);
+}
 
 /* === Footer === */
 .footer {

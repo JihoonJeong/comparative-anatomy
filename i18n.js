@@ -43,7 +43,7 @@ const translations = {
     ludexTitle: "Ludex &mdash; Artificial Selection",
     ludexIntro: "Extracting the best organs from both species and recombining them into a new organism. Model Medicine meets Model Therapeutics.",
     ludexCaption: "Organs extracted from both species &mdash; context engine, memory system, plugin system &mdash; assembled into a new hybrid organism: Ludex.",
-    ludexNote: "Each block is independent. Combine what you need.",
+    ludexNote: "Planned architecture &mdash; organ transplant from both species into a modular agent block library.",
 
     paperTitle: "The Paper",
     paperIntro: "Full research paper with 11 organ system analyses, phylogenetic timeline, and 21 references.",
@@ -111,7 +111,7 @@ const translations = {
     ludexTitle: "Ludex &mdash; \uC778\uACF5 \uC120\uD0DD",
     ludexIntro: "\uB450 \uC885\uC5D0\uC11C \uCD5C\uACE0\uC758 \uC7A5\uAE30\uB97C \uCD94\uCD9C\uD558\uC5EC \uC0C8\uB85C\uC6B4 \uC720\uAE30\uCCB4\uB85C \uC7AC\uC870\uD569. Model Medicine\uACFC Model Therapeutics\uC758 \uB9CC\uB0A8.",
     ludexCaption: "\uC591\uCABD \uC885\uC5D0\uC11C \uCD94\uCD9C\uB41C \uC7A5\uAE30 \u2014 context engine, memory system, plugin system \u2014 \uAC00 \uC0C8\uB85C\uC6B4 \uD558\uC774\uBE0C\uB9AC\uB4DC \uC720\uAE30\uCCB4 Ludex\uB85C \uC870\uB9BD\uB429\uB2C8\uB2E4.",
-    ludexNote: "\uAC01 \uBE14\uB85D\uC740 \uB3C5\uB9BD\uC801\uC785\uB2C8\uB2E4. \uD544\uC694\uD55C \uAC83\uB9CC \uC870\uD569\uD558\uC138\uC694.",
+    ludexNote: "\uACC4\uD68D\uB41C \uC544\uD0A4\uD14D\uCC98 &mdash; \uB450 \uC885\uC5D0\uC11C \uC7A5\uAE30\uB97C \uC774\uC2DD\uD558\uC5EC \uBAA8\uB4C8\uC2DD \uC5D0\uC774\uC804\uD2B8 \uBE14\uB85D \uB77C\uC774\uBE0C\uB7EC\uB9AC\uB85C \uAD6C\uC131\uD569\uB2C8\uB2E4.",
 
     paperTitle: "\uB17C\uBB38",
     paperIntro: "11\uAC1C \uC7A5\uAE30 \uC2DC\uC2A4\uD15C \uBD84\uC11D, \uACC4\uD1B5 \uD0C0\uC784\uB77C\uC778, 21\uAC1C \uCC38\uACE0\uBB38\uD5CC\uC744 \uD3EC\uD568\uD55C \uC804\uCCB4 \uC5F0\uAD6C \uB17C\uBB38.",

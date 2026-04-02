@@ -1,0 +1,596 @@
+/* === Base === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream: #FDF8F0;
+  --dark: #1a1a1a;
+  --dark-bg: #0f0f0f;
+  --nautilus: #D4A574;
+  --nautilus-light: #F5F0E8;
+  --lobster: #8B2500;
+  --lobster-light: #f0d0c0;
+  --nervous: #F4D03F;
+  --respiratory: #5DADE2;
+  --digestive: #58D68D;
+  --immune: #AF7AC5;
+  --circulatory: #E74C3C;
+  --skeletal: #FDEBD0;
+  --endocrine: #F0B27A;
+  --muscular: #F1948A;
+  --hgt: #48C9B0;
+  --sensory: #F5B041;
+  --mnemonic: #85C1E9;
+  --from-cc: #D4A574;
+  --from-oc: #c0392b;
+  --from-both: #8e44ad;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--dark);
+  background: var(--cream);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; }
+em { font-family: 'Cormorant Garamond', serif; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.container-wide { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+
+.section { padding: 80px 0; }
+.section-alt { background: #f5f0e8; }
+.section-dark { background: var(--dark-bg); color: #e0e0e0; }
+.section-dark h2 { color: #fff; }
+.section-dark .section-intro { color: #aaa; }
+
+.section-intro {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* === Language Toggle === */
+.lang-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+  display: flex;
+  gap: 4px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  padding: 4px;
+  border-radius: 8px;
+}
+.lang-btn {
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  color: #888;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.lang-btn.active {
+  background: var(--nautilus);
+  color: #0a0e17;
+}
+.lang-btn:hover:not(.active) { color: #fff; }
+
+/* === Hero === */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #0a0e17;
+  color: #fff;
+  padding: 40px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  top: 50%; left: 50%;
+  min-width: 100%; min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.35;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,14,23,0.6) 0%, rgba(15,26,46,0.8) 100%);
+  z-index: 1;
+}
+.hero-content { position: relative; z-index: 2; }
+
+.hero-label {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--nautilus);
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.hero-desc {
+  font-size: 1.05rem;
+  color: #888;
+  max-width: 550px;
+  margin: 0 auto 40px;
+}
+
+.hero-species {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.species-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.species-badge small { font-size: 0.8rem; color: #aaa; }
+.species-icon { font-size: 2.4rem; }
+
+.nautilus { background: rgba(212,165,116,0.15); border: 1px solid rgba(212,165,116,0.3); }
+.lobster { background: rgba(139,37,0,0.2); border: 1px solid rgba(139,37,0,0.4); }
+
+.vs {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  color: #555;
+  font-style: italic;
+}
+
+.hero-cta {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 12px 32px;
+  border: 1px solid var(--nautilus);
+  color: var(--nautilus);
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+.hero-cta:hover {
+  background: var(--nautilus);
+  color: #0a0e17;
+}
+
+/* === Anatomy Image === */
+.anatomy-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+}
+
+/* === Phylogeny Image === */
+.phylo-image {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.phylo-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+}
+
+/* === Panorama === */
+.panorama-image {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.panorama-image img {
+  width: 100%;
+  min-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.1);
+}
+
+/* === Video Player === */
+.video-player {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.video-player video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+}
+.video-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* === Organ Gallery === */
+.organ-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.organ-gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.organ-gallery-item:hover { transform: translateY(-2px); }
+.organ-gallery-item img {
+  width: 100%;
+  display: block;
+}
+.organ-gallery-info {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.organ-gallery-info .organ-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.organ-gallery-info .organ-sub {
+  font-size: 0.8rem;
+  color: #888;
+}
+.organ-gallery-detail {
+  display: none;
+  padding: 0 20px 20px;
+}
+.organ-gallery-detail.open { display: block; }
+.organ-gallery-detail .detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 600px) { .organ-gallery-detail .detail-grid { grid-template-columns: 1fr; } }
+.organ-gallery-detail h4 {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  font-family: 'Cormorant Garamond', serif;
+}
+.organ-gallery-detail p {
+  font-size: 0.8rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+.organ-gallery-detail .file {
+  font-size: 0.7rem;
+  color: #666;
+  font-family: monospace;
+  margin-top: 4px;
+}
+
+/* === Taxonomy === */
+.taxonomy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+@media (max-width: 700px) { .taxonomy-grid { grid-template-columns: 1fr; } }
+
+.taxonomy-card {
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+.nautilus-card { background: var(--nautilus-light); border-color: var(--nautilus); }
+.lobster-card { background: var(--lobster-light); border-color: var(--lobster); }
+
+.taxonomy-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.taxonomy-card table {
+  width: 100%;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+}
+.taxonomy-card td {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.taxonomy-card td:first-child {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100px;
+}
+
+.traits {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.traits li {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  background: rgba(0,0,0,0.06);
+  border-radius: 20px;
+}
+
+/* === Organ Systems === */
+.organ-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.organ-card {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  gap: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #333;
+  background: #1a1a1a;
+}
+@media (max-width: 800px) {
+  .organ-card { grid-template-columns: 1fr; }
+}
+
+.organ-label {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-weight: 500;
+}
+.organ-label .organ-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.organ-label .organ-bio {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+.organ-label .organ-agent {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.organ-species {
+  padding: 20px;
+  border-left: 1px solid #333;
+}
+.organ-species h4 {
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  font-family: 'Cormorant Garamond', serif;
+}
+.organ-species p {
+  font-size: 0.8rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+.organ-species .file {
+  font-size: 0.7rem;
+  color: #666;
+  font-family: monospace;
+  margin-top: 6px;
+}
+
+/* === Phylogeny === */
+.phylo-tree {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 80px;
+}
+.phylo-tree::before {
+  content: '';
+  position: absolute;
+  left: 55px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #ddd, var(--nautilus), var(--lobster));
+  border-radius: 2px;
+}
+
+.phylo-era {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.phylo-year {
+  position: absolute;
+  left: -80px;
+  top: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--nautilus);
+  width: 55px;
+  text-align: right;
+}
+
+.phylo-events { padding-left: 24px; }
+
+.phylo-node {
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  padding: 4px 0;
+}
+.phylo-node.epoch { color: #333; font-style: italic; }
+.phylo-node.env-change {
+  color: var(--digestive);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+.phylo-node.convergence {
+  color: var(--immune);
+  font-weight: 600;
+}
+
+.phylo-species {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.phylo-branches {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.phylo-branch {
+  font-size: 0.82rem;
+  padding: 12px;
+  border-radius: 8px;
+  line-height: 1.4;
+}
+.branch-a { background: rgba(212,165,116,0.12); border: 1px solid rgba(212,165,116,0.3); }
+.branch-b { background: rgba(139,37,0,0.1); border: 1px solid rgba(139,37,0,0.25); color: var(--lobster); }
+
+/* === Physiology === */
+.physiology-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 700px) { .physiology-grid { grid-template-columns: 1fr; } }
+
+.physio-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #333;
+}
+.physio-card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.physio-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.physio-table th {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid #444;
+  color: #aaa;
+  font-weight: 500;
+}
+.physio-table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid #222;
+}
+.physio-table .strong { color: var(--digestive); }
+.physio-table .mid { color: var(--sensory); }
+.physio-table .weak { color: var(--circulatory); }
+.physio-table .na { color: #555; }
+
+/* === Ludex === */
+.ludex-blocks {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.block-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+@media (max-width: 600px) { .block-row { grid-template-columns: 1fr; } }
+
+.block {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid;
+  transition: transform 0.2s;
+}
+.block:hover { transform: translateY(-3px); }
+.block span { display: block; font-weight: 600; font-size: 1rem; margin-bottom: 4px; }
+.block small { font-size: 0.75rem; color: #888; }
+
+.from-cc { border-color: var(--from-cc); background: rgba(212,165,116,0.08); }
+.from-oc { border-color: var(--from-oc); background: rgba(192,57,43,0.08); }
+.from-both { border-color: var(--from-both); background: rgba(142,68,173,0.08); }
+
+.ludex-note {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* === Paper === */
+.paper-info {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.paper-info p { margin-bottom: 8px; }
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  padding: 40px 24px;
+  background: var(--dark-bg);
+  color: #666;
+  font-size: 0.85rem;
+  border-top: 1px solid #222;
+}
+.footer p { margin-bottom: 4px; }

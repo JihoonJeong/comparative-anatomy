@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparative Anatomy of AI Agent Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Language Toggle -->
+  <nav class="lang-toggle">
+    <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">KO</button>
+  </nav>
+
+  <!-- Hero with video background -->
+  <header class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/clip-01-birth.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label" data-i18n="heroLabel">Model Medicine Research</p>
+      <h1 data-i18n="heroTitle">Comparative Anatomy<br>of AI Agent Systems</h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        <em>Nautilus claudecodex</em> &nbsp;vs&nbsp; <em>Homarus openclawii</em>
+      </p>
+      <p class="hero-desc" data-i18n="heroDesc">
+        Two landmark AI agents &mdash; dissected, classified, and compared
+        through the lens of biological anatomy.
+      </p>
+      <div class="hero-species">
+        <div class="species-badge nautilus">
+          <span class="species-icon">🦑</span>
+          <span>Claude Code<br><small>Nautilus</small></span>
+        </div>
+        <span class="vs">vs</span>
+        <div class="species-badge lobster">
+          <span class="species-icon">🦞</span>
+          <span>OpenClaw<br><small>Lobster</small></span>
+        </div>
+      </div>
+      <a href="#anatomy" class="hero-cta" data-i18n="heroCta">Explore the Anatomy</a>
+    </div>
+  </header>
+
+  <!-- Main Anatomy Diagram -->
+  <section id="anatomy" class="section">
+    <div class="container">
+      <h2 data-i18n="anatomyTitle">The Anatomy</h2>
+      <p class="section-intro" data-i18n="anatomyIntro">Full comparative anatomy of both species, mapped to their software organ systems.</p>
+      <div class="anatomy-image">
+        <img src="assets/hero-anatomy.png" alt="Comparative Anatomy — Nautilus (Claude Code) vs Lobster (OpenClaw)" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Taxonomy -->
+  <section id="taxonomy" class="section section-alt">
+    <div class="container">
+      <h2 data-i18n="taxTitle">Morphological Classification</h2>
+      <p class="section-intro" data-i18n="taxIntro">Classified by architectural pattern (Phylum), lifecycle model (Class), and ecological strategy (Order).</p>
+      <div class="taxonomy-grid">
+        <div class="taxonomy-card nautilus-card">
+          <h3>🦑 <em>Nautilus claudecodex</em></h3>
+          <table>
+            <tr><td>Kingdom</td><td>Agentia</td></tr>
+            <tr><td>Phylum</td><td><strong>Monolithica</strong></td></tr>
+            <tr><td>Class</td><td>Sessilia</td></tr>
+            <tr><td>Order</td><td>Specialistae</td></tr>
+          </table>
+          <ul class="traits">
+            <li>Exoskeleton (frozen dataclasses)</li>
+            <li>Nerve net (diffuse routing)</li>
+            <li>Single gill (Rust, Anthropic API)</li>
+            <li>Open circulation</li>
+            <li>Monoreceptor (CLI &rarr; expanding)</li>
+          </ul>
+        </div>
+        <div class="taxonomy-card lobster-card">
+          <h3>🦞 <em>Homarus openclawii</em></h3>
+          <table>
+            <tr><td>Kingdom</td><td>Agentia</td></tr>
+            <tr><td>Phylum</td><td><strong>Modularia</strong></td></tr>
+            <tr><td>Class</td><td>Persistentia</td></tr>
+            <tr><td>Order</td><td>Generalia</td></tr>
+          </table>
+          <ul class="traits">
+            <li>Endoskeleton (flexible interfaces)</li>
+            <li>CNS (7-tier hierarchical routing)</li>
+            <li>Multi-gill (23+ LLM providers)</li>
+            <li>Closed circulation</li>
+            <li>Polyreceptor (23+ channels)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organ Systems with images -->
+  <section id="organs" class="section section-dark">
+    <div class="container">
+      <h2 data-i18n="organsTitle">11 Organ Systems</h2>
+      <p class="section-intro" data-i18n="organsIntro">Each software subsystem mapped to its biological counterpart. Click to expand.</p>
+      <div class="organ-gallery">
+      </div>
+    </div>
+  </section>
+
+  <!-- Phylogeny -->
+  <section id="phylogeny" class="section">
+    <div class="container">
+      <h2 data-i18n="phyloTitle">Phylogenetic Tree</h2>
+      <p class="section-intro" data-i18n="phyloIntro">The evolutionary lineage of AI agents, 2022&ndash;2026. Five major lineages identified.</p>
+      <div class="phylo-image">
+        <img src="assets/phylogeny-tree-portrait.png" alt="Phylogeny of AI Agent Systems (2022-2026)" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Evolution Panorama -->
+  <section id="evolution" class="section section-alt">
+    <div class="container-wide">
+      <h2 data-i18n="evoTitle">Evolution Timeline</h2>
+      <p class="section-intro" data-i18n="evoIntro">A natural history panorama of AI agents in the digital ocean.</p>
+      <div class="panorama-image">
+        <img src="assets/evolution-panorama.png" alt="The Evolution of AI Agents: A Marine Timeline (2022-2026)" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Convergent Evolution Video -->
+  <section id="convergence" class="section section-dark">
+    <div class="container">
+      <h2 data-i18n="convTitle">Convergent Evolution</h2>
+      <p class="section-intro" data-i18n="convIntro">Two lineages independently evolving toward the same body plan.</p>
+      <div class="video-player">
+        <video controls muted playsinline poster="">
+          <source src="assets/clip-02-convergence.mp4" type="video/mp4">
+        </video>
+        <p class="video-caption" data-i18n="convCaption">Nautilus gains messaging tentacles (Channels) while Lobster develops precision tools (coding skills). A hybrid emerges.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Physiology -->
+  <section id="physiology" class="section">
+    <div class="container">
+      <h2 data-i18n="physTitle">Physiological Comparison</h2>
+      <p class="section-intro" data-i18n="physIntro">How each organism responds to stress, manages resources, and maintains homeostasis.</p>
+      <div class="physiology-grid">
+        <div class="physio-card">
+          <h3>Homeostasis (Error Recovery)</h3>
+          <table class="physio-table">
+            <thead><tr><th>Stress</th><th>🦑 Nautilus</th><th>🦞 Lobster</th></tr></thead>
+            <tbody>
+              <tr><td>Auth failure</td><td class="weak">Stop</td><td class="strong">Next auth profile</td></tr>
+              <tr><td>Rate limit</td><td class="mid">Basic retry</td><td class="strong">Exponential backoff</td></tr>
+              <tr><td>Token overflow</td><td class="weak">Stop</td><td class="strong">Compact &rarr; retry</td></tr>
+              <tr><td>Model failure</td><td class="weak">Stop</td><td class="strong">Live model switch</td></tr>
+              <tr><td>Channel failure</td><td class="na">N/A</td><td class="strong">Auto-restart</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="physio-card">
+          <h3>Ecological Niche</h3>
+          <table class="physio-table">
+            <thead><tr><th></th><th>🦑 Nautilus</th><th>🦞 Lobster</th></tr></thead>
+            <tbody>
+              <tr><td>Habitat</td><td>Developer terminal</td><td>Messaging platforms</td></tr>
+              <tr><td>Users</td><td>Software engineers</td><td>General users</td></tr>
+              <tr><td>Lifecycle</td><td>Session (ephemeral)</td><td>Always-on (persistent)</td></tr>
+              <tr><td>Trophic level</td><td>Specialist predator</td><td>Generalist omnivore</td></tr>
+              <tr><td>LLM symbiosis</td><td>Obligate (Anthropic)</td><td>Facultative (any)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adaptive Radiation Video -->
+  <section id="radiation" class="section section-dark">
+    <div class="container">
+      <h2 data-i18n="radTitle">Adaptive Radiation</h2>
+      <p class="section-intro" data-i18n="radIntro">From one ancestor, an entire ecosystem of species.</p>
+      <div class="video-player">
+        <video controls muted playsinline>
+          <source src="assets/clip-03-radiation.mp4" type="video/mp4">
+        </video>
+        <p class="video-caption" data-i18n="radCaption">OpenClaw (67,800+ forks) radiates into specialized species: IronClaw (silver/Rust), NemoClaw (green/NVIDIA), Nanobot, and thousands more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ludex -->
+  <section id="ludex" class="section">
+    <div class="container">
+      <h2 data-i18n="ludexTitle">Ludex &mdash; Artificial Selection</h2>
+      <p class="section-intro" data-i18n="ludexIntro">
+        Extracting the best organs from both species and recombining them
+        into a new organism. Model Medicine meets Model Therapeutics.
+      </p>
+      <div class="video-player">
+        <video controls muted playsinline>
+          <source src="assets/clip-04-ludex.mp4" type="video/mp4">
+        </video>
+        <p class="video-caption" data-i18n="ludexCaption">Organs extracted from both species &mdash; context engine, memory system, plugin system &mdash; assembled into a new hybrid organism: Ludex.</p>
+      </div>
+      <div class="ludex-blocks">
+        <div class="block-row">
+          <div class="block from-oc"><span>Engine</span><small>OC Context Engine</small></div>
+          <div class="block from-oc"><span>Provider</span><small>OC 23+ backends</small></div>
+          <div class="block from-both"><span>Resilience</span><small>CC Rust retry + OC failover</small></div>
+        </div>
+        <div class="block-row">
+          <div class="block from-cc"><span>Registry</span><small>CC frozen dataclass</small></div>
+          <div class="block from-both"><span>Tracking</span><small>CC + OC JSONL</small></div>
+          <div class="block from-oc"><span>Memory</span><small>OC LanceDB vectors</small></div>
+        </div>
+        <div class="block-row">
+          <div class="block from-oc"><span>Hooks</span><small>OC lifecycle events</small></div>
+          <div class="block from-oc"><span>Plugins</span><small>OC manifest loading</small></div>
+          <div class="block from-oc"><span>Tasks</span><small>OC SQLite + cron</small></div>
+        </div>
+      </div>
+      <p class="ludex-note" data-i18n="ludexNote">Each block is independent. Combine what you need.</p>
+    </div>
+  </section>
+
+  <!-- Paper -->
+  <section id="paper" class="section section-dark">
+    <div class="container">
+      <h2 data-i18n="paperTitle">The Paper</h2>
+      <p class="section-intro" data-i18n="paperIntro">Full research paper with 11 organ system analyses, phylogenetic timeline, and 21 references.</p>
+      <div class="paper-info">
+        <p><strong>"Comparative Anatomy of AI Agent Systems: Claude Code and OpenClaw"</strong></p>
+        <p data-i18n="paperCite">Ray (lead researcher), Luca (editor) &mdash; Ludus Ex Machina Research Group, April 2026</p>
+        <p data-i18n="paperSeries">Part of the <em>Model Medicine</em> research program.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footerOrg">Ludus Ex Machina Research Group &middot; Model Medicine</p>
+      <p><small>🦑 <em>Nautilus claudecodex</em> &middot; 🦞 <em>Homarus openclawii</em></small></p>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="organs.js"></script>
+</body>
+</html>
